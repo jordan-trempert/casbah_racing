@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casbah Racing Group</title>
+    <style>
+        body {
+            font-family: Rubik, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, rgba(240,45,127,1) 0%, rgba(255,0,0,1) 50%, rgba(240,45,127,1) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 2px solid #000;
+            width: 100%;
+            justify-content: center;
+        }
+        .divider {
+            height: 50px;
+            border-right: 2px solid #000;
+            margin: 0 10px;
+        }
+        .logo img {
+            height: 50px;
+            padding: 10px;
+        }
+        .title {
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .section {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .section p {
+            margin: 10px 0;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .platCard {
+            background-color: #A0B2C6;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            padding: 20px;
+            background-image: url("platinum.png");
+
+        }
+        .goldCard {
+            background-color: #FFD700;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            padding: 20px;
+            background-image: url("gold.png");
+        }
+        .silverCard {
+            background-color: #C0C0C0;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            padding: 20px;
+            background-image: url("silver.png");
+        }
+        .bronzeCard {
+            background-color: #CD7F32;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            padding: 20px;
+            background-image: url("bronze.png");
+        }
+
+        .card-content {
+            flex: 1;
+            font-size: 18px;
+        }
+        .card h2 {
+            margin: 0 0 10px;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .card li {
+            margin-bottom: 5px;
+        }
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+            align-self: center;
+        }
+
+         .platCard:hover {
+            transform: scale(1.05) rotate(0deg);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            animation: sway 0.5s ease-in-out infinite alternate;
+        }
+        .silverCard:hover {
+            transform: scale(1.05) rotate(0deg);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            animation: sway 0.5s ease-in-out infinite alternate;
+        }
+        .goldCard:hover {
+            transform: scale(1.05) rotate(0deg);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            animation: sway 0.5s ease-in-out infinite alternate;
+        }
+        .bronzeCard:hover {
+            transform: scale(1.05) rotate(0deg);
+            -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.75);
+            animation: sway 0.5s ease-in-out infinite alternate;
+        }
+        @keyframes sway {
+            0% { transform: scale(1.05) rotate(-2deg); }
+            100% { transform: scale(1.05) rotate(2deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" draggable="false">
+    </div>
+    <div class="divider"></div>
+    <div class="title"><strong>Casbah Racing Group</strong></div>
+    <div class="divider"></div>
+    <div class="nav-links">
+        <strong>
+            <a href="#home">Home</a>
+            <a href="#join">Join</a>
+            <a href="#members">Members</a>
+            <a href="#sponsor">Sponsor</a>
+        </strong>
+    </div>
+    <div class="divider"></div>
+    <div class="title"><strong><i>Driven by Victory</i></strong></div>
+</div>
+
+<div class="content">
+    <div id="home" class="section">
+        <h2>Home</h2>
+        <p>Welcome to the Casbah Racing Group. We're all about speed and style!</p>
+    </div>
+    <div id="join" class="section">
+        <h2>Join</h2>
+        <p><strong>Join the Team</strong></p>
+        <p>To join the Casbah Racing Group, you must be interviewed by the director. If you pass your interview, you MUST pay a team fee of $200.</p>
+        <p>Contact - Andrew Schlect</p>
+        <p>(740)396-7946</p>
+    </div>
+    <div id="members" class="section">
+        <h2>Members</h2>
+        <p><strong>Meet the Team:</strong></p>
+
+            <li>Director - Andrew Schelct</li>
+            <li>Chief Engineer -</li>
+            <li>1st Engineer -</li>
+            <li>2nd Engineer -</li>
+            <li>3rd Engineer -</li>
+            <li>4th Engineer - Andrew Schelct</li>
+            <li>1st Driver - Andrew Schelct</li>
+            <li>1st Navigator -</li>
+            <li>2nd Driver -</li>
+            <li>2nd Navigator -</li>
+
+    </div>
+    <div id="sponsor" class="section">
+        <h2>Sponsor Us</h2>
+        <p><strong>Sponsor Perks</strong></p>
+        <div class="card-container">
+            <div class="platCard">
+                <div class="card-content">
+                    <h2>Platinum Sponsor -<br /> $1,000</h2>
+                    <ul>
+                        <li>Special access to the CRG Team</li>
+                        <li>Your name on the car</li>
+                        <li>Sponsor shirt</li>
+                        <li>Mention</li>
+                    </ul>
+                </div>
+            </div>
+            <br />
+            <div class="goldCard">
+                <div class="card-content">
+                    <h2>Gold Sponsor -<br /> $500</h2>
+                    <ul>
+                        <li>Your name on the car</li>
+                        <li>Sponsor shirt</li>
+                        <li>Mention</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="silverCard">
+                <div class="card-content">
+                    <h2>Silver Sponsor -<br /> $250</h2>
+                    <ul>
+                        <li>Sponsor shirt</li>
+                        <li>Mention</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bronzeCard">
+                <div class="card-content">
+                    <h2>Bronze Sponsor -<br /> $100</h2>
+                    <ul>
+                        <li>Mention</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
