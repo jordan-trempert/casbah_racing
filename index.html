@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
             font-family: Rubik, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(90deg, rgba(94,28,28,1) 0%, rgba(175,0,0,1) 50%, rgba(94,28,28,1) 100%);
+            background: linear-gradient(90deg, rgba(130,25,69,1) 0%, rgba(130,0,0,1) 50%, rgba(130,25,69,1) 100%);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -82,6 +83,23 @@
         .section p {
             margin: 10px 0;
         }
+
+        .members ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left;
+        }
+        .members li {
+            margin-bottom: 5px;
+        }
+
+         .members-list {
+            text-align: left;
+            list-style-position: inside;
+        }
+
+
+        
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -226,7 +244,7 @@
     <div id="members" class="section">
         <h2>Members</h2>
         <p><strong>Meet the Team:</strong></p>
-
+        <ul class="members-list">
             <li>Director - Andrew Schlecht</li>
             <li>Chief Engineer -</li>
             <li>1st Engineer -</li>
@@ -237,7 +255,7 @@
             <li>1st Navigator -</li>
             <li>2nd Driver -</li>
             <li>2nd Navigator -</li>
-
+        </ul>
     </div>
     <div id="sponsor" class="section">
         <h2>Sponsor Us</h2>
@@ -245,14 +263,11 @@
         <div class="card-container">
             <div class="platCard">
                 <div class="card-content">
-                    <h2>Platinum Sponsor<br /> $1,000</h2>
+                    <h2>Platinum Sponsor -<br /> $1,000</h2>
                     <ul>
                         <li>Special access to the CRG Team</li>
-                        <br />
                         <li>Your name on the car</li>
-                        <br />
                         <li>Sponsor shirt</li>
-                        <br />
                         <li>Mention</li>
                     </ul>
                 </div>
@@ -260,29 +275,26 @@
             <br />
             <div class="goldCard">
                 <div class="card-content">
-                    <h2>Gold Sponsor<br /> $500</h2>
+                    <h2>Gold Sponsor -<br /> $500</h2>
                     <ul>
                         <li>Your name on the car</li>
-                        <br />
                         <li>Sponsor shirt</li>
-                        <br />
                         <li>Mention</li>
                     </ul>
                 </div>
             </div>
             <div class="silverCard">
                 <div class="card-content">
-                    <h2>Silver Sponsor<br /> $250</h2>
+                    <h2>Silver Sponsor -<br /> $250</h2>
                     <ul>
                         <li>Sponsor shirt</li>
-                        <br />
                         <li>Mention</li>
                     </ul>
                 </div>
             </div>
             <div class="bronzeCard">
                 <div class="card-content">
-                    <h2>Bronze Sponsor<br /> $100</h2>
+                    <h2>Bronze Sponsor -<br /> $100</h2>
                     <ul>
                         <li>Mention</li>
                     </ul>
